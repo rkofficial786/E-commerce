@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="nav1">
+        <div class="logo"><img src="./images/logo.png" alt=""></div>
+        <div class="search-container">
+            <form>
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Search..." id="search" onkeyup="searchfun()">
+
+            </form>
+        </div>
+
+        <div class="login"><button>Login/Register</button></div>
+    </div>
+
+
+    <div class="nav2">
+        <ul>
+            <li onclick="active(this); filter('men');">MEN</li>
+            <li onclick="active(this); filter('women');">WOMEN</li>
+            <li onclick="active(this); filter('kids');">KIDS</li>
+            <li onclick="active(this); filter('watch');">WATCH</li>
+            <li onclick="active(this); filter('gifts');">GIFTS</li>
+        </ul>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <!-- trending section -->
+    <br>
+    <br>
+
+
+
+    <div class="product-section">
+        <div class="top">
+            <h1>Trending</h1>
+            <h1 class="view-more">View more</h1>
+        </div>
+
+        <div class="product-list">
+
+            <div class="product">
+                <img src="./images/product-8.jpg" alt=""> <br>
+                <h3>Sleek Silver Chronograph Watch for Men</h3>
+                <br>
+                <div class="stars"><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div><br>
+
+                <div class="price">
+                    <span>Rs. 599 </span>
+                    <button>20% Off</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./images/product-9.jpg" alt=""> <br>
+                <h3>Rose Gold Luxury Women's Watch with Leather Strap</h3>
+                <br>
+                <div class="stars"><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div><br>
+
+                <div class="price">
+                    <span>Rs. 299 </span>
+                    <button>50% Off</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./images/product-7.jpg" alt=""> <br>
+                <h3> Stylish White Sneakers with Rainbow Soles for Women</h3>
+                <br>
+                <div class="stars"><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div><br>
+
+                <div class="price">
+                    <span>Rs. 399 </span>
+                    <button>90% Off</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./images/product-1.jpg" alt=""> <br>
+                <h3>Weirdo cotton Fit regular Men,s Tshirt</h3>
+                <br>
+                <div class="stars"><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div><br>
+
+                <div class="price">
+                    <span>Rs. 399 </span>
+                    <button>70% Off</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./images/product-2.jpg" alt=""> <br>
+                <h3>Classic Black Leather Oxford Shoes for Men</h3>
+                <br>
+                <div class="stars"><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div><br>
+
+                <div class="price">
+                    <span>Rs. 499 </span>
+                    <button>10% Off</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./images/product-3.jpg" alt=""> <br>
+                <h3>Weirdo cotton Fit regular <br> Men,s Tshirt</h3>
+                <br>
+                <div class="stars"><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div><br>
+
+                <div class="price">
+                    <span>Rs. 699 </span>
+                    <button>80% Off</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./images/product-4.jpg" alt=""> <br>
+                <h3>Vintage Graphic Print Men's T-shirt with Distressed Look</h3>
+                <br>
+                <div class="stars"><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div><br>
+
+                <div class="price">
+                    <span>Rs. 199 </span>
+                    <button>70% Off</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./images/product-5.jpg" alt=""> <br>
+                <h3>Classic Black Leather Oxford Shoes for Men</h3>
+                <br>
+                <div class="stars"><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div><br>
+
+                <div class="price">
+                    <span>Rs. 399 </span>
+                    <button>10% Off</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./images/product-6.jpg" alt=""> <br>
+                <h3>Fitted Men's Crop Top T-shirt with Bold Typography</h3>
+                <br>
+                <div class="stars"><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div><br>
+
+                <div class="price">
+                    <span>Rs. 699 </span>
+                    <button>60% Off</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<hr>
+<!-- security-- -->
+    <div class="security">
+        <div>
+            <img src="./images/icons/motorbike.png" alt="">
+            <h4>Free <br> Delivery</h4>
+        </div>
+
+
+        <div>
+            <img src="./images/icons/exchange.png" alt="">
+            <h4>Easy <br> Exchange</h4>
+        </div>
+
+        <div>
+            <img src="./images/icons/circular-label-with-certified-stamp.png" alt="">
+            <h4>Certified <br> Products</h4>
+        </div>
+    </div>
+
+<hr>
+
+    <!-- app dwonload -->
+
+    <div class="app">
+
+        <div class="left">
+            <img src="./images/icons/1user-interface-design-mobile-app-development-game-ui-removebg-preview.png" alt="">
+        </div>
+
+        <div class="right">
+            <h1>Dwonload <br>  RedStore app now </h1>
+            <p>Fast ,Simple and Easy to use</p>
+            <div class="app-logo">
+                <img src="./images/app-store.png" alt="">
+                <img src="./images/play-store.png" alt="">
+            </div>
+        </div>
+    </div>
+<hr>
+
+    <!-- poster -->
+
+    <div class="poster">
+        <img src="./images/madame-tara-web-500-----new-sponsored-brand-2023-03-24-vb.webp" alt="">
+    </div>
+
+<hr>
+    <!-- handpicked// -->
+    <div class="top">
+        <h1>HandPicked</h1>
+<h1 class="view-more">View more</h1>
+    </div>
+    
+    <div class="product-list exclusive-list">
+
+
+        
+        <div class="exclusive">
+            
+            <img src="./images/category-1.jpg" alt="">
+            <h1>Jeans</h1>
+        </div>
+
+        <div class="exclusive">
+            <img src="./images/category-2.jpg" alt="">
+            <h1>Shoes</h1>
+        </div>
+
+        <div class="exclusive">
+            <img src="./images/category-3.jpg" alt="">
+            <h1>Jackets</h1>
+        </div>
+
+        <div class="exclusive">
+            <img src="./images/product-9.jpg" alt="">
+            <h1>Smartwatch</h1>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
